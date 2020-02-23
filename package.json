@@ -1,0 +1,20 @@
+{
+    "name": "design-system",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch": "gulp watch",
+        "tokens": "goron -out src/tokens/tokens.css"
+    },
+    "keywords": [],
+    "author": "Chris Galbraith",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^9.7.4",
+        "goron": "^0.1.1",
+        "gulp": "^4.0.2",
+        "gulp-concat-css": "^3.1.0",
+        "gulp-postcss": "^8.0.0"
+    }
+}
