@@ -1,20 +1,23 @@
 {
-    "name": "design-system",
+    "name": "base-css",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
-    "scripts": {
-        "watch": "gulp watch",
-        "tokens": "goron -out src/tokens/tokens.css"
-    },
+    "main": "gulpfile.js",
+    "scripts": {},
     "keywords": [],
     "author": "Chris Galbraith",
     "license": "ISC",
     "devDependencies": {
-        "autoprefixer": "^9.7.4",
-        "goron": "^0.1.1",
         "gulp": "^4.0.2",
-        "gulp-concat-css": "^3.1.0",
-        "gulp-postcss": "^8.0.0"
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-dest": "^0.2.3",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sass-glob": "^1.1.0",
+        "postcss": "^7.0.26",
+        "postcss-logical": "^4.0.2"
     }
 }

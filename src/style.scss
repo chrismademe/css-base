@@ -1,5 +1,6 @@
-@import "tokens/tokens.css";
-@import "tokens/scale.css";
+@import 'tokens/tokens';
+@import 'tokens/scale';
+@import 'functions/*';
 
 /* Box sizing rules */
 *,
@@ -34,6 +35,8 @@ dd {
 body {
     color: var(--color-black);
     font-family: var(--font-base);
+    font-size: var(--step-0);
+    padding: var(--size-4);
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -71,6 +74,27 @@ select {
     font: inherit;
 }
 
+/* Disabled Element */
+[disabled] {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Hidden Element */
+[hidden] {
+    display: none !important;
+}
+
+/* Accessible hidden elements, good for labels and such */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -91,6 +115,7 @@ h4,
 .h4 {
     font-family: var(--font-heading, var(--font-base));
     font-weight: 700;
+    line-height: 1;
     margin: 0;
 }
 
@@ -114,5 +139,5 @@ h4,
     font-size: var(--step-2);
 }
 
-@import "components/cluster.css";
-@import "components/flow.css";
+@import 'components/*.scss';
+@import 'utilities/*.scss';
