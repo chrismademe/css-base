@@ -7,6 +7,10 @@
     --flow-space: var(--size-2);
 }
 
+.flow--mid > * + * {
+    --flow-space: var(--size-3);
+}
+
 .flow--loose > * + * {
     --flow-space: var(--size-6);
 }

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>CSS</title>
+        <link rel="stylesheet" href="dist/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body class="bg-grey-100">
+
+        <div class="gap-top-10 | flow flow--tight | container container--small">
+
+            <h1 class="c-neutral">Form</h1>
+            <p class="leading-tight">A sample contact form.</p>
+
+            <form class="flow flow--mid | gap-top-6">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="field">
+                    <label for="email">E-mail Address</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <div class="field">
+                    <button class="btn btn--positive" type="submit">Send</button>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html>

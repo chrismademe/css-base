@@ -1,7 +1,7 @@
 /* Buttons */
 .btn {
     appearance: none;
-    border: 0.2rem solid var(--color-grey);
+    border: none;
     border-radius: 0.2rem;
     background-color: var(--color-grey);
     color: white;
@@ -22,5 +22,6 @@
 @each $key, $value in $colors {
     .btn--#{$key} {
         background-color: var(--color-#{$key});
+        color: auto-color($value);
     }
 }
